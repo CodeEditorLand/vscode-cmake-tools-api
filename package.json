@@ -1,32 +1,36 @@
 {
-    "name": "vscode-cmake-tools",
-    "version": "1.1.0",
-    "description": "Public API for vscode-cmake-tools",
-    "typings": "./out/api.d.ts",
-    "main": "./out/api.js",
-    "engines": {
-        "vscode": "1.63.0"
-    },
-    "devDependencies": {
-        "@types/node": "20.11.30",
-        "@types/vscode": "1.87.0",
-        "typescript": "5.4.2"
-    },
-    "scripts": {
-        "compile": "tsc -p ./"
-    },
-    "keywords": [
-        "vscode",
-        "CMake"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/microsoft/vscode-cmake-tools-api.git"
-    },
-    "bugs": {
-        "url": "https://github.com/microsoft/vscode-cmake-tools-api/issues"
-    },
-    "author": "Microsoft Corporation",
-    "publisher": "ms-vscode",
-    "license": "MIT"
+	"name": "vscode-cmake-tools",
+	"version": "0.0.1",
+	"private": false,
+	"description": "Public API for vscode-cmake-tools",
+	"homepage": "https://github.com/CodeEditorLand/Foundation#readme",
+	"bugs": {
+		"url": "https://github.com/CodeEditorLand/Foundation/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CodeEditorLand/Foundation.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Playform",
+		"email": "Hello@Playform.Cloud",
+		"url": "https://playform.cloud"
+	},
+	"type": "module",
+	"main": "./out/api.js",
+	"typings": "./out/api.d.ts",
+	"scripts": {
+		"compile": "tsc -p ./",
+		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'"
+	},
+	"devDependencies": {
+		"@types/node": "20.11.30",
+		"@types/vscode": "1.87.0",
+		"typescript": "5.4.2",
+		"typescript-esbuild": "latest"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }
