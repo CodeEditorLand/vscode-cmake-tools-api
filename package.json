@@ -1,36 +1,36 @@
 {
-	"author": {
-		"email": "Hello@Playform.Cloud",
-		"name": "Playform",
-		"url": "https://playform.cloud"
-	},
+	"name": "vscode-cmake-tools",
+	"version": "0.0.1",
+	"private": false,
+	"description": "Public API for vscode-cmake-tools",
+	"homepage": "https://github.com/CodeEditorLand/Foundation#readme",
 	"bugs": {
 		"url": "https://github.com/CodeEditorLand/Foundation/issues"
-	},
-	"description": "Public API for vscode-cmake-tools",
-	"devDependencies": {
-		"@types/node": "20.11.30",
-		"@types/vscode": "1.87.0",
-		"typescript": "5.4.2",
-		"typescript-esbuild": ""
-	},
-	"homepage": "https://github.com/CodeEditorLand/Foundation#readme",
-	"license": "SEE LICENSE IN LICENSE",
-	"main": "./out/api.js",
-	"name": "vscode-cmake-tools",
-	"private": false,
-	"publishConfig": {
-		"access": "public"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/CodeEditorLand/Foundation.git"
 	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Playform",
+		"email": "Hello@Playform.Cloud",
+		"url": "https://playform.cloud"
+	},
+	"type": "module",
+	"main": "./out/api.js",
+	"typings": "./out/api.d.ts",
 	"scripts": {
 		"compile": "tsc -p ./",
 		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'"
 	},
-	"type": "module",
-	"typings": "./out/api.d.ts",
-	"version": "0.0.1"
+	"devDependencies": {
+		"@types/node": "20.11.30",
+		"@types/vscode": "1.87.0",
+		"typescript": "5.4.2",
+		"typescript-esbuild": "0.4.5"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }
