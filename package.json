@@ -7,6 +7,6 @@
 		"compile": "tsc -p ./"
 	},
 	"devDependencies": {
-		"@types/node": "~14.14.28"
+		"@types/node": "14.14.28"
 	}
 }
