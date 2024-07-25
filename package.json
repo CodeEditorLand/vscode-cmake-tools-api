@@ -1,12 +1,12 @@
 {
-	"description": "Public API for vscode-cmake-tools",
-	"devDependencies": {
-		"@types/node": "~14.14.28"
-	},
-	"main": "./out/api.js",
 	"name": "vscode-cmake-tools",
+	"description": "Public API for vscode-cmake-tools",
+	"main": "./out/api.js",
+	"typings": "./out/api.d.ts",
 	"scripts": {
 		"compile": "tsc -p ./"
 	},
-	"typings": "./out/api.d.ts"
+	"devDependencies": {
+		"@types/node": "20.14.12"
+	}
 }
