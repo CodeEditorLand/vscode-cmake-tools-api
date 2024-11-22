@@ -280,10 +280,12 @@ export async function getCMakeToolsApi(
 		console.warn(
 			"[vscode-cmake-tools-api] CMake Tools extension is not installed.",
 		);
+
 		return undefined;
 	}
 
 	let exports: CMakeToolsExtensionExports | undefined;
+
 	if (!extension.isActive) {
 		try {
 			// activate() may throw if VS Code is shutting down.
@@ -297,15 +299,18 @@ export async function getCMakeToolsApi(
 		console.warn(
 			"[vscode-cmake-tools-api] CMake Tools extension does not provide an API.",
 		);
+
 		return undefined;
 	}
 
 	const api = exports.getApi(desiredVersion);
+
 	if (desiredVersion !== api.version) {
 		if (exactMatch) {
 			console.warn(
 				`[vscode-cmake-tools-api] CMake Tools API version ${desiredVersion} is not available.`,
 			);
+
 			return undefined;
 		} else {
 			console.warn(
