@@ -189,6 +189,7 @@ export declare namespace CodeModel {
 		targets: Target[];
 		/** Location of the Project */
 		sourceDirectory: string;
+
 		hasInstallRule?: boolean;
 	}
 	/**
@@ -200,14 +201,17 @@ export declare namespace CodeModel {
 		/** Name of the active configuration in a multi-configuration generator.*/
 		name: string;
 	}
+
 	interface Toolchain {
 		path: string;
+
 		target?: string;
 	}
 	/** Describes the cmake model */
 	interface Content {
 		/** List of configurations provided by the selected generator */
 		configurations: Configuration[];
+
 		toolchains?: Map<string, Toolchain>;
 	}
 }

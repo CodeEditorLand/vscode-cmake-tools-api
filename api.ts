@@ -250,6 +250,7 @@ export namespace CodeModel {
 
 	export interface Toolchain {
 		path: string;
+
 		target?: string;
 	}
 
