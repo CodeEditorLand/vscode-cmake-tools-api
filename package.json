@@ -1,7 +1,7 @@
 {
 	"description": "Public API for vscode-cmake-tools",
 	"devDependencies": {
-		"@types/node": "22.10.0"
+		"@types/node": "22.10.1"
 	},
 	"main": "./out/api.js",
 	"name": "vscode-cmake-tools",
